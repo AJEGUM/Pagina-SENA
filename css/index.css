@@ -1,0 +1,276 @@
+/* Presentacion */
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentacion figure {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.presentacion figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn-banner {
+  position: absolute;
+  top: 70%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  background-color: #5170ff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.btn-banner:hover {
+  background-color: #ff66c4;
+} 
+
+/* CARDS*/
+
+.servicios {
+  padding: 40px 250px;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.servicios-contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.servicios article {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.servicios article:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background-color: #39a900; /* verde */
+}
+
+.servicios figure {
+  margin: 0;
+}
+
+.servicios figure img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.servicios article:hover img {
+  transform: scale(1.05);
+}
+
+.servicios figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.servicios article:hover figcaption {
+  color: #fff;
+}
+
+.servicios figcaption i {
+  font-size: 1.2rem;
+  color: #39a900;
+  transition: color 0.3s ease;
+}
+
+.servicios article:hover figcaption i {
+  color: #fff;
+}
+
+/* Informacion sena*/
+
+.informacion-sena {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f7f7f7;
+}
+
+.informacion-sena h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.informacion-sena p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: #555;
+}
+
+.informacion-sena h3 {
+  font-size: 1.5rem;
+  margin: 25px 0 15px;
+  color: #39a900;
+}
+
+.btn-inscribete {
+  background-color: #39a900;
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+    margin-right: 8px; /* separación entre ícono y texto */
+  vertical-align: middle; /* alinea el ícono con el texto */
+}
+
+.btn-inscribete:hover {
+  background-color: #296d06;
+}
+
+.btn-inscribete i,
+.btn-banner i {
+  margin-right: 8px;      /* espacio entre icono y texto */
+  vertical-align: middle; /* alinea el icono con el texto */
+}
+
+/* Caso de exito*/
+
+.caso-exito {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.caso-exito h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.caso-exito-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.caso-exito figure {
+  flex: 1 1 400px;
+  margin: 0;
+}
+
+.caso-exito figure img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.caso-exito-texto {
+  flex: 1 1 400px;
+}
+
+.caso-exito-texto h3 {
+  font-size: 1.6rem;
+  color: #39a900;
+  margin-bottom: 1rem;
+}
+
+.caso-exito-texto p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-conoce-mas {
+  background: #39a900;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-conoce-mas:hover {
+  background: #296d06;
+}
+
+.btn-conoce-mas i {
+  margin-right: 8px;      /* separación entre ícono y texto */
+  vertical-align: middle; /* alinea el ícono con el texto */
+}
+
+/* Modal login */
+
+.form-login .input-grupo {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-login label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.form-login input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.form-login input:focus {
+  border: 1px solid #39a900;
+}
+
+.btn-login-submit {
+  background: #39a900;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-login-submit:hover {
+  background: #296d06;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}

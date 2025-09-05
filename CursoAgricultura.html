@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/EstilosGlobalesCursos.css">
+  <link rel="stylesheet" href="/css/modal.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>SENA - Curso técnicas modernas de agricultura</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-titulo">
+      <img class="logo" src="/img/logoSena.png" alt="Logo del SENA">
+      <div class="barra"></div>
+      <h1>SENA</h1>
+    </div>
+    <nav>
+      <a href="/index.html">Inicio</a>
+      <a href="/cursos.html" class="active">Cursos</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="imgPresentacion">
+      <img src="/img/cursoAgricultura.jpg" alt="Curso de técnicas modernas de agricultura" class="imagen">
+      <div class="textoSobreImagen">
+        <h2>Curso técnicas modernas de agricultura</h2>
+        <p>Aprende lo más importante para la gestión.</p>
+      </div>
+    </section>
+
+    <!-- Info curso -->
+    <section class="info-curso">
+      <article>
+        <h3>¿Qué aprenderás?</h3>
+        <p>Este curso te brindará conocimientos sobre prácticas agrícolas modernas, 
+          uso eficiente del agua, manejo sostenible de suelos, control de plagas y 
+          enfermedades, así como la implementación de tecnologías innovadoras para 
+          optimizar la producción agrícola.</p>
+      </article>
+
+      <article>
+        <h3>Requisitos</h3>
+        <p>No necesitas experiencia previa, solo motivación y disposición para aprender.</p>
+      </article>
+
+      <article>
+        <h3>Duración</h3>
+        <p>40 horas certificadas por el SENA.</p>
+      </article>
+    </section>
+
+    <!-- Información complementaria -->
+    <aside class="resaltado">
+      <div class="resaltado-header">
+        <div>
+          <h4>Inicio</h4>
+          <p>15 de septiembre 2025</p>
+        </div>
+        <div>
+          <h4>Finalización</h4>
+          <p>15 de noviembre 2025</p>
+        </div>
+      </div>
+      <div class="resaltado-body">
+        <p><strong>Modalidad:</strong> Virtual</p>
+        <p><strong>Lugar de inscripción:</strong> Portal SENA Sofia Plus</p>
+        <p><strong>Código de ficha:</strong> 1234567</p>
+
+        <!-- Labels que actúan como botones -->
+        <label for="btn-inscribirse" class="btn-inscribirse" role="button" tabindex="0">Inscribirse</label>
+        <label for="btn-compartir" class="btn-compartir" role="button" tabindex="0">Compartir</label>
+      </div>
+    </aside>
+
+    <!-- Checkbox ocultos -->
+    <input type="checkbox" id="btn-inscribirse" class="btn-check" aria-hidden="true">
+    <input type="checkbox" id="btn-compartir" class="btn-check" aria-hidden="true">
+
+    <!-- Modal Inscribirse -->
+    <div class="modal-login" id="modal-inscribirse" aria-hidden="true" role="dialog" aria-labelledby="inscripcion-title">
+      <div class="modal-contenido">
+        <label for="btn-inscribirse" class="cerrar" aria-label="Cerrar">&times;</label>
+        <h2 id="inscripcion-title">Formulario de Inscripción</h2>
+        <p>Completa tus datos para inscribirte al curso.</p>
+        <form>
+          <div class="input-grupo">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" placeholder="Tu nombre">
+          </div>
+          <div class="input-grupo">
+            <label for="correo">Correo:</label>
+            <input id="correo" type="email" placeholder="Tu correo">
+          </div>
+          <button type="submit" class="btn-login-submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal Compartir -->
+    <div class="modal-login" id="modal-compartir" aria-hidden="true" role="dialog" aria-labelledby="compartir-title">
+      <div class="modal-contenido">
+        <label for="btn-compartir" class="cerrar" aria-label="Cerrar">&times;</label>
+        <h2 id="compartir-title">Compartir curso</h2>
+        <p>Elige una red social para compartir este curso:</p>
+        <div class="iconos-redes">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://tupagina.com" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/intent/tweet?url=https://tupagina.com&text=Revisa este curso del SENA" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a href="https://api.whatsapp.com/send?text=Mira este curso del SENA: https://tupagina.com" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <img src="/img/logoSena.png" alt="Logo del SENA">
+        <h2>SENA</h2>
+      </div>
+      <div class="footer-info">
+        <p><strong>Dirección general:</strong><br>
+          Calle 57 No. 8 - 69 Bogotá D.C. (Cundinamarca), Colombia<br>
+          El SENA brinda atención presencial en las 33 Regionales y 118 Centros de Formación
+        </p>
+        <p><strong>Horario de atención:</strong><br>
+          Lunes a viernes: 7:00 a.m. a 7:00 p.m.<br>
+          Sábados: 8:00 a.m. a 1:00 p.m.
+        </p>
+        <p><strong>Líneas de atención:</strong><br>
+          Ciudadanos, empresarios y línea PQRS<br>
+          Bogotá: +(57) 601 736 60 60<br>
+          Línea gratuita resto del país: 018000910270<br>
+          WhatsApp: 3112545028
+        </p>
+      </div>
+      <div class="footer-redes">
+        <h3>Síguenos</h3>
+        <div class="iconos-redes">
+          <a href="https://www.facebook.com/SENA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/SENA" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/SENA" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/SENA" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-derechos">
+      <p>&copy; 2025 SENA - Todos los derechos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

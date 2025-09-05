@@ -1,0 +1,151 @@
+/* Centrado general del contenido principal, tanto filtros como cards */
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Filtros */
+.filtros {
+    flex: 0 0 250px;
+    background: #f7f7f7;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filtros h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.filtros form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.filtros label {
+    font-weight: bold;
+}
+
+.filtros select,
+.filtros button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filtros button.aplicar {
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.filtros button.aplicar:hover {
+    background: #218838;
+}
+
+/* Contenedor del buscador */
+.buscador {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buscador input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+.buscador input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.cards a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    margin: 0.3rem 0 0;
+    color: #555;
+}
+
+/* Íconos de modalidad (virtual/presencial) */
+.card p i {
+    color: #28a745;      /* verde por defecto */
+    margin-right: 6px;   /* pequeño espacio antes del texto */
+    font-size: 1rem;
+}
+
+/* Hover en verde */
+.card:hover {
+    background-color: #28a745;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.card:hover p {
+    color: #fff;
+}
+
+.card:hover img {
+    filter: brightness(0.9);
+}
+
+/* Íconos blancos al hacer hover */
+.card:hover p i {
+    color: #fff;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/cursos.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cursos</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-titulo">
+            <img class="logo" src="/img/logoSena.png" alt="Logo del SENA">
+            <div class="barra"></div>
+            <h1>SENA</h1>
+        </div>
+        <nav>
+            <a href="/index.html" >Inicio</a>
+            <a href="/cursos.html" class="active">Cursos</a>
+        </nav>
+    </header>
+
+
+    <!-- Contenido -->
+    <main class="contenido">
+        <!-- Filtros -->
+            <!-- Es un aside ya que no es contenido principal, esta relacionado pero es un contenido secundario -->
+        <aside class="filtros" aria-label="Filtros de cursos">
+            <h2>Filtros</h2>
+
+            <form>
+                <label for="modalidad">Modalidad:</label>
+                <select id="modalidad" name="modalidad">
+                    <option value="">Selecciona</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="virtual">Virtual</option>
+                </select>
+
+                <label for="nivel">Nivel de formación:</label>
+                <select id="nivel" name="nivel">
+                    <option value="">Cursos</option>
+                </select>
+
+                <label for="duracion">Duración:</label>
+                <select id="duracion" name="duracion">
+                    <option value="">Selecciona</option>
+                    <option value="48">40 hrs</option>
+                    <option value="40">50 hrs</option>
+                    <option value="3984">60 hrs</option>
+                </select>
+
+                <button class="aplicar" type="submit">Aplicar</button>
+            </form>
+        </aside>
+
+        <!-- Cards de cursos -->
+        <section class="cards">
+            <div class="buscador">
+                <input type="text" placeholder="Buscar cursos..." id="buscar-cursos">
+            </div>
+            
+            <a href="/cursoProgramacion.html" class="card">
+                <div class="info">
+                    <h3>Curso de Fundamentos de Programación</h3>
+                    <p><strong>Duración:</strong> 60 hrs</p>
+                    <p><strong>Nivel:</strong> Curso</p>
+                    <p><i class="fa-solid fa-laptop-code"></i> Virtual</p>
+                    <p class="descripcion">
+                        Aprende los conceptos básicos de la programación: variables, estructuras de control, 
+                        funciones y lógica computacional para iniciar tu carrera en tecnología.
+                    </p>
+                </div>
+            </a>
+
+            <a href="/CursoAgricultura.html" class="card">
+                <div class="info">
+                    <h3>Curso de Técnicas Modernas de Agricultura</h3>
+                    <p><strong>Duración:</strong> 40 hrs</p>
+                    <p><strong>Nivel:</strong> Curso</p>
+                    <p><i class="fa-solid fa-chalkboard-user"></i> Presencial</p>
+                    <p class="descripcion">
+                        Conoce métodos actuales para mejorar la productividad agrícola, 
+                        incluyendo riego eficiente, uso responsable de fertilizantes y control de plagas.
+                    </p>
+                </div>
+            </a>
+
+            <a href="/CursoBancario.html" class="card">
+                <div class="info">
+                    <h3>Curso de Gestión Bancaria y Financiera</h3>
+                    <p><strong>Duración:</strong> 50 hrs</p>
+                    <p><strong>Nivel:</strong> Curso</p>
+                    <p><i class="fa-solid fa-laptop-code"></i> Virtual</p>
+                    <p class="descripcion">
+                        Aprende los fundamentos de la gestión bancaria, manejo de productos financieros,
+                        normativas del sector y estrategias para una administración eficiente.
+                    </p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-logo">
+            <img src="/img/logoSena.png" alt="Logo del SENA">
+            <h2>SENA</h2>
+            </div>
+            <div class="footer-info">
+            <p><strong>Dirección general:</strong><br>
+                Calle 57 No. 8 - 69 Bogotá D.C. (Cundinamarca), Colombia<br>
+                El SENA brinda a la ciudadanía, atención presencial en las 33 Regionales y 118 Centros de Formación
+            </p>
+            <p><strong>Horario de atención:</strong><br>
+                Lunes a viernes: 7:00 a.m. a 7:00 p.m.<br>
+                Sábados: 8:00 a.m. a 1:00 p.m.
+            </p>
+            <p><strong>Líneas de atención:</strong><br>
+                Ciudadanos, empresarios y línea PQRS<br>
+                Bogotá: +(57) 601 736 60 60<br>
+                Línea gratuita resto del país: 018000910270<br>
+                WhatsApp: 3112545028
+            </p>
+            </div>
+            <div class="footer-redes">
+            <h3>Síguenos</h3>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com/SENA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/SENA" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/SENA" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/SENA" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-derechos">
+            <p>&copy; 2025 SENA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>

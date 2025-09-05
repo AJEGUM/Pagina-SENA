@@ -1,11 +1,7 @@
-/* Estilos del Navbar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -14,13 +10,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, #5170ff, #ff66c4); /* azul pastel → rosado */
+  background: linear-gradient(to right, #5170ff, #ff66c4);
   padding: 30px 100px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   color: white;
 }
 
-ul{
+/* Navbar */
+header nav ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -28,10 +24,26 @@ ul{
   padding: 0;
 }
 
-a{
+header nav a {
+  margin-left: 20px;
   text-decoration: none;
+  color: white;
+  font-weight: 700; /* Todos iguales en grosor */
+  transition: color 0.3s ease;
 }
 
+header nav a:hover {
+  color: #007BFF;
+}
+
+header nav a.active {
+  text-decoration: none; /* Quitamos el subrayado */
+  border-bottom: 2px solid #fff; /* Subrayado fijo */
+  padding-bottom: 2px; /* Para separar un poquito */
+}
+
+
+/* Logo */
 .logo-titulo {
   display: flex;
   align-items: center;
@@ -49,20 +61,3 @@ a{
   background-color: #ffffff;
   margin-right: 10px;
 }
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #007BFF;
-}
-
-nav a.active {
-  text-decoration: underline;
-}
-
-

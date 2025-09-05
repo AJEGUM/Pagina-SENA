@@ -210,7 +210,6 @@ label.btn-compartir:hover { background: #2d7f00; }
   transform: scale(1.1); /* efecto pequeño */
 }
 
-
 /* Accesibilidad: foco visible para labels que actúan como botones */
 label.btn-inscribirse:focus, label.btn-compartir:focus,
 .cerrar:focus, .btn-login-submit:focus, .iconos-redes a:focus {

@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/EstilosGlobalesCursos.css">
-  <link rel="stylesheet" href="/css/modal.css"><!-- estilos de modales -->
+  <link rel="stylesheet" href="/css/modal.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>SENA - Gestión Bancaria</title>
 </head>
 <body>
-  <!-- Encabezado principal -->
   <header>
     <div class="logo-titulo">
       <img class="logo" src="/img/logoSena.png" alt="Logo del SENA">
@@ -27,15 +26,16 @@
   <main>
     <!-- Hero -->
     <section class="imgPresentacion">
-      <img src="/img/cursoBancario.jpg" alt="Curso de Gestión Bancaria" class="imagen">
       <div class="textoSobreImagen">
         <h2>Gestión Bancaria</h2>
         <p>Aprende lo más importante sobre gestión financiera.</p>
       </div>
+      <img src="/img/cursoBancario.jpg" alt="Curso de Gestión Bancaria" class="imagen">
     </section>
 
     <!-- Información del curso -->
     <section class="info-curso">
+      <h2>Información del curso</h2>
       <article>
         <h3>¿Qué aprenderás?</h3>
         <p>En este curso aprenderás los conceptos básicos de la gestión bancaria, 
@@ -71,13 +71,11 @@
         <p><strong>Lugar de inscripción:</strong> Portal SENA Sofia Plus</p>
         <p><strong>Código de ficha:</strong> 1234567</p>
 
-        <!-- Labels que abren modales -->
-        <label for="btn-inscribirse" class="btn-inscribirse" role="button" tabindex="0">Inscribirse</label>
-        <label for="btn-compartir" class="btn-compartir" role="button" tabindex="0">Compartir</label>
+        <label for="btn-inscribirse" class="btn-inscribirse" tabindex="0">Inscribirse</label>
+        <label for="btn-compartir" class="btn-compartir" tabindex="0">Compartir</label>
       </div>
     </aside>
 
-    <!-- Checkboxes ocultos -->
     <input type="checkbox" id="btn-inscribirse" class="btn-check" aria-hidden="true">
     <input type="checkbox" id="btn-compartir" class="btn-check" aria-hidden="true">
 
@@ -108,15 +106,20 @@
         <h2 id="compartir-title">Compartir curso</h2>
         <p>Elige una red social para compartir este curso:</p>
         <div class="iconos-redes">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://tupagina.com" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/intent/tweet?url=https://tupagina.com&text=Revisa este curso del SENA" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-          <a href="https://api.whatsapp.com/send?text=Mira este curso del SENA: https://tupagina.com" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://tupagina.com" target="_blank" rel="noopener">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/intent/tweet?url=https://tupagina.com&text=Revisa%20este%20curso%20del%20SENA" target="_blank" rel="noopener">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?text=Mira%20este%20curso%20del%20SENA:%20https://tupagina.com" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
       </div>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-contenido">
       <div class="footer-logo">

@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.registro-seccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.registro-contenido {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.registro-contenido h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #39a900;
+}
+
+.input-grupo {
+  margin-bottom: 1rem;
+}
+
+.input-grupo label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.input-grupo input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Botón registrar */
+.btn-registrar {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border: none;
+  background: #39a900;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-registrar:hover {
+  background: #2c7f00;
+}
+
+/* Link a login */
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
